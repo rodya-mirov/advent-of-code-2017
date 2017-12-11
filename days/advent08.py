@@ -1,4 +1,4 @@
-""" Code for Advent of Code Day 7 """
+""" Code for Advent of Code Day 8 """
 import unittest
 
 def advent_8a(input_filename):
@@ -91,13 +91,13 @@ class Advent8Tests(unittest.TestCase):
 
     def test_8a(self):
         """ Test the main 'whole path' method for 8a """
-        actual = advent_8a('aoc_8_test.txt')
+        actual = advent_8a('fixtures/aoc_8_test.txt')
         expected = 1
         self.assertEqual(actual, expected)
 
     def test_8b(self):
         """ Test the main 'whole path' method for 8b """
-        actual = advent_8b('aoc_8_test.txt')
+        actual = advent_8b('fixtures/aoc_8_test.txt')
         expected = 10
         self.assertEqual(actual, expected)
 

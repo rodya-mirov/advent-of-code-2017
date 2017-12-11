@@ -46,7 +46,7 @@ class Advent4Tests(unittest.TestCase):
 
     def test_4a_full_test(self):
         """ Test the whole path for 4a, including file io """
-        actual = advent_4a("aoc_4a_test.txt")
+        actual = advent_4a("fixtures/aoc_4a_test.txt")
         expected = 2
         self.assertEqual(actual, expected)
 
@@ -60,7 +60,7 @@ class Advent4Tests(unittest.TestCase):
 
     def test_4b_full_test(self):
         """ Test the whole path for 4b """
-        actual = advent_4b("aoc_4b_test.txt")
+        actual = advent_4b("fixtures/aoc_4b_test.txt")
         expected = 3
         self.assertEqual(actual, expected)
 

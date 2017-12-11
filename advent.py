@@ -13,15 +13,19 @@ import days.advent06 as advent06
 import days.advent07 as advent07
 import days.advent08 as advent08
 import days.advent09 as advent09
+import days.advent10 as advent10
+import days.advent11 as advent11
 
-def do_puzzle(day, args):
+def do_puzzle(day):
     """ Do the puzzle specified by the user command line input """
     start_time = time.time()
 
     if day == "1a":
-        print(advent01.advent_1_a(args[0]))
+        num = open("fixtures/aoc_1.txt").readline().strip()
+        print(advent01.advent_1_a(num))
     elif day == "1b":
-        print(advent01.advent_1_b(args[0]))
+        num = open("fixtures/aoc_1.txt").readline().strip()
+        print(advent01.advent_1_b(num))
     elif day == "2a":
         with open("fixtures/aoc_2.txt") as input_file:
             rows = [[int(cell) for cell in line.split()] for line in input_file.readlines()]
@@ -60,10 +64,19 @@ def do_puzzle(day, args):
         print(advent09.advent_9a("fixtures/aoc_9.txt"))
     elif day == "9b":
         print(advent09.advent_9b("fixtures/aoc_9.txt"))
+    elif day == "10a":
+        print(advent10.advent_10a("fixtures/aoc_10.txt"))
+    elif day == "11a":
+        print(advent11.advent_11a("fixtures/aoc_11.txt"))
+    elif day == "11b":
+        print(advent11.advent_11b("fixtures/aoc_11.txt"))
     else:
         print("Unrecognized day:", day)
 
     end_time = time.time()
     print("Took {:0.3f} seconds".format(end_time - start_time))
 
-do_puzzle(sys.argv[1], sys.argv[2:])
+if len(sys.argv) == 2:
+    do_puzzle(sys.argv[1])
+else:
+    print("Usage: python3 advent.py [day]")

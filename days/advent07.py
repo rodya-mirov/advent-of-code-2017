@@ -145,7 +145,7 @@ class Advent7Tests(unittest.TestCase):
 
     def test_7a(self):
         """ Test the main 'whole path' method for 7a """
-        actual = advent_7a('aoc_7a_test.txt')
+        actual = advent_7a('fixtures/aoc_7a_test.txt')
         expected = 'tknk'
         self.assertEqual(actual, expected)
 

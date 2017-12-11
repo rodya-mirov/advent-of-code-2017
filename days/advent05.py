@@ -63,13 +63,13 @@ class Advent5Tests(unittest.TestCase):
 
     def test_5a_full_test(self):
         """ Test the whole path for 5a, including file io """
-        actual = advent_5a("aoc_5a_test.txt")
+        actual = advent_5a("fixtures/aoc_5a_test.txt")
         expected = 5
         self.assertEqual(actual, expected)
 
     def test_5b_full_test(self):
         """ Test the whole path for 5b, including file io """
-        actual = advent_5b("aoc_5a_test.txt")
+        actual = advent_5b("fixtures/aoc_5a_test.txt")
         expected = 10
         self.assertEqual(actual, expected)
 

@@ -1,4 +1,4 @@
-""" Code for Advent of Code Day 7 """
+""" Code for Advent of Code Day 9 """
 import unittest
 
 def advent_9a(file_name):

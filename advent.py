@@ -16,6 +16,9 @@ import days.advent09 as advent09
 import days.advent10 as advent10
 import days.advent11 as advent11
 import days.advent12 as advent12
+import days.advent13 as advent13
+
+import days.advent18 as advent18
 
 def do_puzzle(day):
     """ Do the puzzle specified by the user command line input """
@@ -75,6 +78,14 @@ def do_puzzle(day):
         print(advent12.advent_12a("fixtures/aoc_12.txt"))
     elif day == "12b":
         print(advent12.advent_12b("fixtures/aoc_12.txt"))
+    elif day == "13a":
+        print(advent13.advent_13a("fixtures/aoc_13.txt"))
+    elif day == "13b":
+        print(advent13.advent_13b("fixtures/aoc_13.txt"))
+    elif day == "18a":
+        print(advent18.advent_18a("fixtures/aoc_18.txt"))
+    elif day == "18b":
+        print(advent18.advent_18b("fixtures/aoc_18.txt"))
     else:
         print("Unrecognized day:", day)
 
